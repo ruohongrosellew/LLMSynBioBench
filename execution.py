@@ -119,10 +119,7 @@ def create_cot_chain(llm):
     
 
 if __name__ == "__main__":
-    openai_35_llm = ChatOpenAI(temperature=0, model= "gpt-3.5-turbo-1106", openai_api_key="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")
-    openai_4_llm = ChatOpenAI(temperature=0, model= "gpt-4", openai_api_key="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")
-    cohere_llm = ChatCohere(temperature=0, verbose = True, cohere_api_key="c5UeIX8QBfcGoiL1qo0o4JVyz0bonYoPhfPF9fgD")
-    palm_llm = ChatGooglePalm(temperature=0, model = "chat-bison-001", google_api_key='AIzaSyB5UbSyvLV7lJPtlgyjt6xmWLvpZ_wdqQc')
+    
     palm_chain = create_cot_chain(palm_llm)
     openai_35_llm_chain = create_cot_chain(openai_35_llm)
     openai_4_llm_chain = create_cot_chain(openai_4_llm)
