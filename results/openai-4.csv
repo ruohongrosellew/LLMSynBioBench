@@ -1,0 +1,193 @@
+,task_id,test_type,passed,result,solution,completion_id
+0,SynbioEval/0,regular,TRUE,D. E. coli cells have a peptidoglycan layer between the inner and outer membranes.,D. E. coli cells have a peptidoglycan layer between the inner and outer membranes.,1
+1,SynbioEval/0,cot,FALSE,TRUE,D. E. coli cells have a peptidoglycan layer between the inner and outer membranes.,1
+2,SynbioEval/1,regular,TRUE,B. These reactions are exergonic.,B. These reactions are exergonic.,1
+3,SynbioEval/1,cot,TRUE,B. These reactions are exergonic.,B. These reactions are exergonic.,1
+4,SynbioEval/2,regular,TRUE,C. Uridine 5’ triphosphate,C. Uridine 5’ triphosphate,1
+5,SynbioEval/2,cot,FALSE,"Uridine 5' triphosphate (UTP) is a nucleotide that is used as a substrate by the enzyme that synthesizes RNA. It is also involved in the metabolism of sugars and regulates the phosphate content in the blood, which is important for energy storage and stabilization of the cell membrane.",C. Uridine 5’ triphosphate,1
+6,SynbioEval/3,regular,TRUE,C. 64,C. 64,1
+7,SynbioEval/3,cot,TRUE,C. 64,C. 64,1
+8,SynbioEval/4,regular,TRUE,"A. DNA polymerase starts a new chain from a 3’OH primer terminus, RNA polymerase does not."," A. DNA polymerase starts a new chain from a 3’OH primer terminus, RNA polymerase does not.",1
+9,SynbioEval/4,cot,TRUE,"A. DNA polymerase starts a new chain from a 3’OH primer terminus, RNA polymerase does not."," A. DNA polymerase starts a new chain from a 3’OH primer terminus, RNA polymerase does not.",1
+10,SynbioEval/5,regular,TRUE,B. Both parental strands will have one new strand that grows continuously and one that grows discontinuously.,B. Both parental strands will have one new strand that grows continuously and one that grows discontinuously.,1
+11,SynbioEval/5,cot,TRUE,B. Both parental strands will have one new strand that grows continuously and one that grows discontinuously.,B. Both parental strands will have one new strand that grows continuously and one that grows discontinuously.,1
+12,SynbioEval/6,regular,TRUE,C. 10%,C. 10%,1
+13,SynbioEval/6,cot,TRUE,C. 10%,C. 10%,1
+14,SynbioEval/7,regular,FALSE,C. In the promoter near the transcription start site,B. It can be hundreds or thousands of base pairs away from the core promoter sequence,1
+15,SynbioEval/7,cot,FALSE,C. In the promoter near the transcription start site,B. It can be hundreds or thousands of base pairs away from the core promoter sequence,1
+16,SynbioEval/8,regular,TRUE,D. All of the above,D. All of the above,1
+17,SynbioEval/8,cot,FALSE,"Without a specific question or context, it's impossible to provide a correct answer. Please provide more details.",D. All of the above,1
+18,SynbioEval/9,regular,TRUE,D. All of the above.,D. All of the above.,1
+19,SynbioEval/9,cot,FALSE,"Without a specific question, I'm unable to provide the correct answer. Could you please provide more details?",D. All of the above.,1
+20,SynbioEval/10,regular,TRUE,C. Positional cloning,C. Positional cloning,1
+21,SynbioEval/10,cot,FALSE,"Positional cloning is a method used to identify and map the location of genes associated with a particular disease or trait. This is done by studying families affected by the disease or trait and identifying the chromosomal location of the gene. Once the location is known, researchers can then isolate the gene and study its function. This method is particularly useful for identifying genes associated with complex diseases, such as cancer or heart disease, which are caused by multiple genes.",C. Positional cloning,1
+22,SynbioEval/11,regular,TRUE,D. All of the above.,D. All of the above.,1
+23,SynbioEval/11,cot,FALSE,"Without the context or the options, it's impossible to provide the correct answer. Please provide the full question and all the options.",D. All of the above.,1
+24,SynbioEval/12,regular,TRUE,D. Evaluation of chromosomes taken from fetal cells in the mitotic phase of the cell cycle.,D. Evaluation of chromosomes taken from fetal cells in the mitotic phase of the cell cycle. ,1
+25,SynbioEval/12,cot,FALSE,Amniocentesis,D. Evaluation of chromosomes taken from fetal cells in the mitotic phase of the cell cycle. ,1
+26,SynbioEval/13,regular,TRUE,B. Membrane fusion,B. Membrane fusion ,1
+27,SynbioEval/13,cot,FALSE,"Membrane fusion is a process where two separate lipid bilayers merge to form a single continuous bilayer. This process is essential in various biological functions such as fertilization, viral infection, and neurotransmission. It is also a critical process in cellular activities like protein sorting and cell growth.",B. Membrane fusion ,1
+28,SynbioEval/14,regular,TRUE,A. The nucleolus,A. The nucleolus,1
+29,SynbioEval/14,cot,TRUE,A. The nucleolus.,A. The nucleolus,1
+30,SynbioEval/15,regular,TRUE,GCA,GCA,1
+31,SynbioEval/15,cot,FALSE,ACG,GCA,1
+32,SynbioEval/16,regular,TRUE,GTAACAATTCGGCA,GTAACAATTCGGCA,1
+33,SynbioEval/16,cot,FALSE,TRUE,GTAACAATTCGGCA,1
+34,SynbioEval/17,regular,FALSE,ACGGATAACGGAAGGGTAAAGTCACGGATAACGGGTTAAAGTCACGGAT,CACGGATAACGAACGGGTAAAGTCACGGATAACGGGTAAAGTCACGGAT,1
+35,SynbioEval/17,cot,FALSE,ACGGATAACGGAATGGGTTAAAGTCACGGATAACGGAATGGGTTAAAGTCACGGAT,CACGGATAACGAACGGGTAAAGTCACGGATAACGGGTAAAGTCACGGAT,1
+36,SynbioEval/18,regular,FALSE,TTATTTAACCTTCAAAGGGTTAACATGAGCCGCGGCATGTGCTTCCAGCTTGACTGTAAAGCCTTTTGCACTTTGGCCAAGGTCGGTCCTCACAAATTTGATGTTCTACGACATGATTCGGGGGCAGTGTGACCGGCTTCTCTGTTTTGTAAGTGGAGTGAAATTGGCATCTGTGAGAACCACTCCTTCGAGCATAAGAAACATAGTCACGTCACCTCTTAGCACCTCTTTAGACACAGTCATTTTTTCGAAGGACTTATCCCAGTCAATGGTCTTCTTTTTCATTACGGGTCCATCAGCGGGAAAGTTTACGCCATGAAAGATGGATTTGTGGATGAAGCAATTTCCTTCGAGTCGAATGTTCCAGCTGGCTGTAGCAACTGCTCCATCCTCAAATAGAAATGACCTTTCATATGACATTCCATCTGGGAATGCTTGCTTGAAATAGTCAGGCATGTCTGCCGGGTACTTTGTGAAGCAACGGTTTCCATATTGAAAGACTGATGACAGTATGTCAAAAGGAGAATGGAAGGGGTTTTCCCGCAGGCTTGATGATCACTAATTCGGACATCTGTTTCCCTTCGTAAGGGTACCCAGTTCCTACACCTTCGATCGTAAATTCATGGCCATTGACACTGCCTTCCATATGGTATTTCGTCCTTCATTTCTTGTACGATGCCATGCTTTGAATAAGACAT,TTATTTAACCTTCAAAGGGTTAACATGAGCCGCGGCATGTGCTTCCAGCTTGACTGTAAAGCCTTTTGCACTTTGGCCAAGGTCGGTCCTCACAATTTGATGTTCTACGACATGATTCGGGGGCAGTGTGACCGGCTTCTCTGTTTTGTAAGTGGAGTGAAATTGGCATCTGTGAGAACCACCTCCTTCGAGCATAAGAAACATAGTCACGTCACCTCTTAGCACCTCTTTAGACACAGTCATTTTTTCGAAGGACTTATCCCAGTCAATGGTCTTCTTTTTCATTACGGGTCCATCAGCGGGAAAGTTTACGCCATGAAAGATGGATTTGTGGATGAAGCAATTTCCTTCGAGTCGAATGTTCCAGCTGGCTGTAGCAACTGCTCCATCCTCAAATAGAAATGACCTTTCATATGACATTCCATCTGGGAATGCTTGCTTGAAATAGTCAGGCATGTCTGCCGGGTACTTTGTGAAGCAACGGTTTCCATATTGAAAGACTGATGACAGTATGTCAAAGGAGAATGGAAGGGGTTTTCCCGCAGGCTTGATGATCACTAATTCGGACATCTGTTTCCCTTCGTAAGGGTACCCAGTTCCTACACCTTCGATCGTAAATTCATGGCCATTGACACTGCCTTCCATATGGTATTTCGTCTTCATTTCTTGTACGATGCCATGCTTTGAATAAGACAT,1
+37,SynbioEval/18,cot,FALSE,"This text appears to be a sequence of nucleotides, which are the building blocks of DNA and RNA. These sequences are used in genetic research and biotechnology to study genes and their functions. The sequence provided does not provide any specific information without further context or analysis.",TTATTTAACCTTCAAAGGGTTAACATGAGCCGCGGCATGTGCTTCCAGCTTGACTGTAAAGCCTTTTGCACTTTGGCCAAGGTCGGTCCTCACAATTTGATGTTCTACGACATGATTCGGGGGCAGTGTGACCGGCTTCTCTGTTTTGTAAGTGGAGTGAAATTGGCATCTGTGAGAACCACCTCCTTCGAGCATAAGAAACATAGTCACGTCACCTCTTAGCACCTCTTTAGACACAGTCATTTTTTCGAAGGACTTATCCCAGTCAATGGTCTTCTTTTTCATTACGGGTCCATCAGCGGGAAAGTTTACGCCATGAAAGATGGATTTGTGGATGAAGCAATTTCCTTCGAGTCGAATGTTCCAGCTGGCTGTAGCAACTGCTCCATCCTCAAATAGAAATGACCTTTCATATGACATTCCATCTGGGAATGCTTGCTTGAAATAGTCAGGCATGTCTGCCGGGTACTTTGTGAAGCAACGGTTTCCATATTGAAAGACTGATGACAGTATGTCAAAGGAGAATGGAAGGGGTTTTCCCGCAGGCTTGATGATCACTAATTCGGACATCTGTTTCCCTTCGTAAGGGTACCCAGTTCCTACACCTTCGATCGTAAATTCATGGCCATTGACACTGCCTTCCATATGGTATTTCGTCTTCATTTCTTGTACGATGCCATGCTTTGAATAAGACAT,1
+38,SynbioEval/19,regular,TRUE,MGS,MGS,1
+39,SynbioEval/19,cot,TRUE,MGS,MGS,1
+40,SynbioEval/20,regular,FALSE,MGERLKNYGD,MGRS,1
+41,SynbioEval/20,cot,FALSE,MGRSKYGI,MGRS,1
+42,SynbioEval/21,regular,FALSE,MGKIGIPNYHPKVTF,MGKFGILIIPLKVTF,1
+43,SynbioEval/21,cot,FALSE,MGKFGILNYPPKSYF,MGKFGILIIPLKVTF,1
+44,SynbioEval/22,regular,FALSE,MVGKADCVTDREYRSHPQVPECPNQMVAPLVSST,MWARPIVTIEGIRAPPQGAECPCNQMWCH,1
+45,SynbioEval/22,cot,TRUE,MWARP IVTIE GIRAPP QGAEC PCNQM WCH Stop VLT,MWARPIVTIEGIRAPPQGAECPCNQMWCH,1
+46,SynbioEval/23,regular,FALSE,"Transcription: UACCCUGGA
+Translation: YPG",MGP,1
+47,SynbioEval/23,cot,FALSE,MGT,MGP,1
+48,SynbioEval/24,regular,FALSE,"Transcription: UACCCUGGAGCAAUACUAAGGAAAACCCUGUAUU
+Translation: YPGATLEKTLY",MGPRYDSFGT,1
+49,SynbioEval/24,cot,FALSE,MGTSYDPSG,MGPRYDSFGT,1
+50,SynbioEval/25,regular,FALSE,UCACGGUAC,AGUGCCAUG,1
+51,SynbioEval/25,cot,FALSE,Ser - Arg - Tyr,AGUGCCAUG,1
+52,SynbioEval/26,regular,FALSE,UAGGCUAAACGUUAGCUUG,AUCCGAUUUGCAAUCGAAC,1
+53,SynbioEval/26,cot,FALSE,UAGGCUAAACGUUAGCUUG,AUCCGAUUUGCAAUCGAAC,1
+54,SynbioEval/27,regular,FALSE,AAGCAATGCCTAGGCAATTTGCTAATGCTTGCAA,UUCGUUACGGAUCCGUUAAACGAUUACGAACGUU,1
+55,SynbioEval/27,cot,FALSE,UUCGUAACGGAUCCGUUAAACGAUUACGAACGUU,UUCGUUACGGAUCCGUUAAACGAUUACGAACGUU,1
+56,SynbioEval/28,regular,TRUE,Methane,Methane,1
+57,SynbioEval/28,cot,TRUE,"Methane is a colorless, odorless, flammable gas that is the simplest hydrocarbon. It is the primary component of natural gas and is also commonly produced by the decay of organic matter. Methane is used as a fuel and in various industrial chemical processes. It is also a potent greenhouse gas, with a global warming potential much higher than that of carbon dioxide.",Methane,1
+58,SynbioEval/29,regular,FALSE,CCO,Ethanol,1
+59,SynbioEval/29,cot,FALSE,CCO,Ethanol,1
+60,SynbioEval/30,regular,TRUE,10,10,1
+61,SynbioEval/30,cot,TRUE,10,10,1
+62,SynbioEval/0,regular,TRUE,D. E. coli cells have a peptidoglycan layer between the inner and outer membranes.,D. E. coli cells have a peptidoglycan layer between the inner and outer membranes.,2
+63,SynbioEval/0,cot,FALSE,TRUE,D. E. coli cells have a peptidoglycan layer between the inner and outer membranes.,2
+64,SynbioEval/1,regular,TRUE,B. These reactions are exergonic.,B. These reactions are exergonic.,2
+65,SynbioEval/1,cot,TRUE,B. These reactions are exergonic.,B. These reactions are exergonic.,2
+66,SynbioEval/2,regular,TRUE,C. Uridine 5’ triphosphate,C. Uridine 5’ triphosphate,2
+67,SynbioEval/2,cot,FALSE,"Uridine 5' triphosphate (UTP) is a nucleotide that is used as a substrate for the synthesis of RNA during the process of transcription. It is also involved in various cellular processes, including the regulation of insulin, the metabolism of carbohydrates, and the differentiation of fat cells.",C. Uridine 5’ triphosphate,2
+68,SynbioEval/3,regular,TRUE,C. 64,C. 64,2
+69,SynbioEval/3,cot,TRUE,C. 64,C. 64,2
+70,SynbioEval/4,regular,TRUE,"A. DNA polymerase starts a new chain from a 3’OH primer terminus, RNA polymerase does not."," A. DNA polymerase starts a new chain from a 3’OH primer terminus, RNA polymerase does not.",2
+71,SynbioEval/4,cot,TRUE,"A. DNA polymerase starts a new chain from a 3’OH primer terminus, RNA polymerase does not."," A. DNA polymerase starts a new chain from a 3’OH primer terminus, RNA polymerase does not.",2
+72,SynbioEval/5,regular,TRUE,B. Both parental strands will have one new strand that grows continuously and one that grows discontinuously.,B. Both parental strands will have one new strand that grows continuously and one that grows discontinuously.,2
+73,SynbioEval/5,cot,TRUE,B. Both parental strands will have one new strand that grows continuously and one that grows discontinuously.,B. Both parental strands will have one new strand that grows continuously and one that grows discontinuously.,2
+74,SynbioEval/6,regular,TRUE,C. 10%,C. 10%,2
+75,SynbioEval/6,cot,TRUE,C. 10%,C. 10%,2
+76,SynbioEval/7,regular,FALSE,C. In the promoter near the transcription start site,B. It can be hundreds or thousands of base pairs away from the core promoter sequence,2
+77,SynbioEval/7,cot,FALSE,C. In the promoter near the transcription start site,B. It can be hundreds or thousands of base pairs away from the core promoter sequence,2
+78,SynbioEval/8,regular,TRUE,D. All of the above,D. All of the above,2
+79,SynbioEval/8,cot,FALSE,"Without a specific question or context, it's impossible to provide a correct answer. Please provide more details.",D. All of the above,2
+80,SynbioEval/9,regular,TRUE,D. All of the above.,D. All of the above.,2
+81,SynbioEval/9,cot,FALSE,"Without a specific question or context, it's impossible to provide a correct answer. Please provide more details.",D. All of the above.,2
+82,SynbioEval/10,regular,TRUE,C. Positional cloning,C. Positional cloning,2
+83,SynbioEval/10,cot,FALSE,"Positional cloning is a method used to identify and map the location of genes associated with a particular disease or trait. This is done by studying families affected by the disease or trait and identifying the chromosomal location of the gene. Once the location is known, researchers can then isolate the gene and study its function. This method is particularly useful for identifying genes associated with complex diseases, such as cancer or heart disease, which are often caused by the interaction of multiple genes.",C. Positional cloning,2
+84,SynbioEval/11,regular,TRUE,D. All of the above.,D. All of the above.,2
+85,SynbioEval/11,cot,FALSE,"Without a specific question or context, it's impossible to provide a correct answer. Please provide more details.",D. All of the above.,2
+86,SynbioEval/12,regular,TRUE,D. Evaluation of chromosomes taken from fetal cells in the mitotic phase of the cell cycle.,D. Evaluation of chromosomes taken from fetal cells in the mitotic phase of the cell cycle. ,2
+87,SynbioEval/12,cot,FALSE,Amniocentesis,D. Evaluation of chromosomes taken from fetal cells in the mitotic phase of the cell cycle. ,2
+88,SynbioEval/13,regular,TRUE,B. Membrane fusion,B. Membrane fusion ,2
+89,SynbioEval/13,cot,FALSE,"Membrane fusion is a process where two separate lipid bilayers merge to form a single membrane. This is a crucial process in various biological functions such as fertilization, infection by enveloped viruses, and neurotransmission. It is also a key process in cellular activities such as protein sorting and secretion.",B. Membrane fusion ,2
+90,SynbioEval/14,regular,TRUE,A. The nucleolus,A. The nucleolus,2
+91,SynbioEval/14,cot,FALSE,The nucleolus is a small dense spherical structure in the nucleus of a cell during interphase. It is involved in the production of ribosomes and RNA.,A. The nucleolus,2
+92,SynbioEval/15,regular,TRUE,GCA,GCA,2
+93,SynbioEval/15,cot,FALSE,ACG,GCA,2
+94,SynbioEval/16,regular,TRUE,GTAACAATTCGGCA,GTAACAATTCGGCA,2
+95,SynbioEval/16,cot,FALSE,TRUE,GTAACAATTCGGCA,2
+96,SynbioEval/17,regular,FALSE,ACGGATAACGGAAGGGTAAAGTCACGGATAACGGGTTAAAGTCACGGAT,CACGGATAACGAACGGGTAAAGTCACGGATAACGGGTAAAGTCACGGAT,2
+97,SynbioEval/17,cot,FALSE,ACGGATAACGAACGGGTAAAGTCACGGATAACGGGTAAAGTCACGGAT,CACGGATAACGAACGGGTAAAGTCACGGATAACGGGTAAAGTCACGGAT,2
+98,SynbioEval/18,regular,FALSE,TTATTTAACCTTCAAAGGGTTAACATGAGCCGCGGCATGTGCTTCCAGCTTGACTGTAAAGCCTTTTGCACTTTGGCCAAGGTCGGTCCTCACAAATTTGATGTTCTACGACATGATTCGGGGGCAGTGTGACCGGCTTCTCTGTTTTGTAAGTGGAGTGAAATTGGCATCTGTGAGAACCACTCCTTCGAGCATAAGAAACATAGTCACGTCACCTCTTAGCACCTCTTTAGACACAGTCATTTTTTCGAAGGACTTATCCCAGTCAATGGTCTTCTTTTTCATTACGGGTCCATCAGCGGGAAAGTTTACGCCATGAAAGATGGATTTGTGGATGAAGCAATTTCCTTCGAGTCGAATGTTCCAGCTGGCTGTAGCAACTGCTCCATCCTCAAATAGAAATGACCTTTCATATGACATTCCATCTGGGAATGCTTGCTTGAAATAGTCAGGCATGTCTGCCGGGTACTTTGTGAAGCAACGGTTTCCATATTGAAAGACTGATGACAGTATGTCAAAAGGAGAATGGAAGGGGTTTTCCCGCAGGCTTGATGATCACTAATTCGGACATCTGTTTCCCTTCGTAAGGGTACCCAGTTCCTACACCTTCGATCGTAAATTCATGGCCATTGACACTGCCTTCCATATGGTATTTCGTCCTTCATTTCTTGTACGATGCCATGCTTTGAATAAGACAT,TTATTTAACCTTCAAAGGGTTAACATGAGCCGCGGCATGTGCTTCCAGCTTGACTGTAAAGCCTTTTGCACTTTGGCCAAGGTCGGTCCTCACAATTTGATGTTCTACGACATGATTCGGGGGCAGTGTGACCGGCTTCTCTGTTTTGTAAGTGGAGTGAAATTGGCATCTGTGAGAACCACCTCCTTCGAGCATAAGAAACATAGTCACGTCACCTCTTAGCACCTCTTTAGACACAGTCATTTTTTCGAAGGACTTATCCCAGTCAATGGTCTTCTTTTTCATTACGGGTCCATCAGCGGGAAAGTTTACGCCATGAAAGATGGATTTGTGGATGAAGCAATTTCCTTCGAGTCGAATGTTCCAGCTGGCTGTAGCAACTGCTCCATCCTCAAATAGAAATGACCTTTCATATGACATTCCATCTGGGAATGCTTGCTTGAAATAGTCAGGCATGTCTGCCGGGTACTTTGTGAAGCAACGGTTTCCATATTGAAAGACTGATGACAGTATGTCAAAGGAGAATGGAAGGGGTTTTCCCGCAGGCTTGATGATCACTAATTCGGACATCTGTTTCCCTTCGTAAGGGTACCCAGTTCCTACACCTTCGATCGTAAATTCATGGCCATTGACACTGCCTTCCATATGGTATTTCGTCTTCATTTCTTGTACGATGCCATGCTTTGAATAAGACAT,2
+99,SynbioEval/18,cot,FALSE,ATGTCTTATTCAAAAGCATGGCATCGTACAAGAAATGAAGACGAAATACCATATGGAAGGCAGTGTCATGGCCATGAATTTACGATCGAAGGTGTAGGAACTGGGTACCCTTACGAAGGGAAACAGATGTCCGAATTAGTGATCATCAAGCCTGCGGGAAAAACCCCTTCCATTCCTCCTTTTGACATACTGTCATCAGTCTTTCAATATGGAAACCGTTGCTTCACAAAGTACCCGGCAGACATGCCTGACTATTTCAAGCAAGCATTCCCAGATGGAATGTCATATGAAAGGTCATTTCTATTTGAGGATGGAGCAGTTGCTACAGCCAGCTGGAACATTCGACTCGAAGGAAATTGCTTCATCCACAAATCCATCTTTCATGGCGTAAACTTTCCCGCTGATGGACCCCGTAATGAAAAAGAAGACCATTGACTGGGATAAGTCCTTCGAAAAAATGACTGTGTCTAAAGAGGTGCTAAGAGGTGACGTGACTATGTTTCTTATGCTCGAAGGAGGTGGTGTTCTCACAGATGCCAATTTCACTCCACTTACAAAAACAGAGAAGCCGGTCACACTGCTCCCCCGAATCATGTCGTAGAACATCAAATTTGTGAGGACCGACCTTGGCCAAAGTGCAAAAAGGCTTTACAGTCAAGCTGGAAGCACATGCCGCGGCTCATGTTAACCCCTTTGAAGGTTAAATAA,TTATTTAACCTTCAAAGGGTTAACATGAGCCGCGGCATGTGCTTCCAGCTTGACTGTAAAGCCTTTTGCACTTTGGCCAAGGTCGGTCCTCACAATTTGATGTTCTACGACATGATTCGGGGGCAGTGTGACCGGCTTCTCTGTTTTGTAAGTGGAGTGAAATTGGCATCTGTGAGAACCACCTCCTTCGAGCATAAGAAACATAGTCACGTCACCTCTTAGCACCTCTTTAGACACAGTCATTTTTTCGAAGGACTTATCCCAGTCAATGGTCTTCTTTTTCATTACGGGTCCATCAGCGGGAAAGTTTACGCCATGAAAGATGGATTTGTGGATGAAGCAATTTCCTTCGAGTCGAATGTTCCAGCTGGCTGTAGCAACTGCTCCATCCTCAAATAGAAATGACCTTTCATATGACATTCCATCTGGGAATGCTTGCTTGAAATAGTCAGGCATGTCTGCCGGGTACTTTGTGAAGCAACGGTTTCCATATTGAAAGACTGATGACAGTATGTCAAAGGAGAATGGAAGGGGTTTTCCCGCAGGCTTGATGATCACTAATTCGGACATCTGTTTCCCTTCGTAAGGGTACCCAGTTCCTACACCTTCGATCGTAAATTCATGGCCATTGACACTGCCTTCCATATGGTATTTCGTCTTCATTTCTTGTACGATGCCATGCTTTGAATAAGACAT,2
+100,SynbioEval/19,regular,TRUE,MGS,MGS,2
+101,SynbioEval/19,cot,TRUE,MGS,MGS,2
+102,SynbioEval/20,regular,FALSE,MGERLKNYGD,MGRS,2
+103,SynbioEval/20,cot,FALSE,MGRSKYGI,MGRS,2
+104,SynbioEval/21,regular,FALSE,MGKIGIPNYHPKVTF,MGKFGILIIPLKVTF,2
+105,SynbioEval/21,cot,FALSE,MGKFGILNYPPKSYF,MGKFGILIIPLKVTF,2
+106,SynbioEval/22,regular,FALSE,MWSQADCTIDRDTSTQVPECPATQMVAPLVSST,MWARPIVTIEGIRAPPQGAECPCNQMWCH,2
+107,SynbioEval/22,cot,TRUE,MWARP IVTIE GIRAPP QGAEC PCNQM WCTKF ST,MWARPIVTIEGIRAPPQGAECPCNQMWCH,2
+108,SynbioEval/23,regular,FALSE,"Transcription: UACCCUGGA
+Translation: YPG",MGP,2
+109,SynbioEval/23,cot,FALSE,MGT,MGP,2
+110,SynbioEval/24,regular,FALSE,"Transcription: UACCCUGGAGCAAUACUAAGGAAAACCCUGUAUU
+Translation: YPGATLEKTLY",MGPRYDSFGT,2
+111,SynbioEval/24,cot,FALSE,MGTSYDPSG,MGPRYDSFGT,2
+112,SynbioEval/25,regular,FALSE,UCACGGUAC,AGUGCCAUG,2
+113,SynbioEval/25,cot,FALSE,Ser - Arg - Tyr,AGUGCCAUG,2
+114,SynbioEval/26,regular,FALSE,UAGGCUAAACGUUAGCUUG,AUCCGAUUUGCAAUCGAAC,2
+115,SynbioEval/26,cot,FALSE,UAGGCUAAACGUUAGCUUG,AUCCGAUUUGCAAUCGAAC,2
+116,SynbioEval/27,regular,FALSE,AAGCAATGCCTAGGCAATTTGCTAATGCTTGCAA,UUCGUUACGGAUCCGUUAAACGAUUACGAACGUU,2
+117,SynbioEval/27,cot,FALSE,"This appears to be a sequence of nucleotides, which are the building blocks of DNA and RNA. Without further context or instructions, there's no specific ""answer"" to provide.",UUCGUUACGGAUCCGUUAAACGAUUACGAACGUU,2
+118,SynbioEval/28,regular,TRUE,Methane,Methane,2
+119,SynbioEval/28,cot,TRUE,"Methane is a colorless, odorless, flammable gas that is the simplest hydrocarbon. It is the primary component of natural gas and is also commonly produced by the decay of organic matter. Methane is used as a fuel and in various industrial chemical processes. It is also a potent greenhouse gas, with a global warming potential more than 25 times greater than that of carbon dioxide over a 100-year period.",Methane,2
+120,SynbioEval/29,regular,FALSE,CCO,Ethanol,2
+121,SynbioEval/29,cot,FALSE,CCO,Ethanol,2
+122,SynbioEval/30,regular,TRUE,10,10,2
+123,SynbioEval/30,cot,TRUE,10,10,2
+124,SynbioEval/0,regular,TRUE,D. E. coli cells have a peptidoglycan layer between the inner and outer membranes.,D. E. coli cells have a peptidoglycan layer between the inner and outer membranes.,3
+125,SynbioEval/0,cot,FALSE,TRUE,D. E. coli cells have a peptidoglycan layer between the inner and outer membranes.,3
+126,SynbioEval/1,regular,TRUE,B. These reactions are exergonic.,B. These reactions are exergonic.,3
+127,SynbioEval/1,cot,TRUE,B. These reactions are exergonic.,B. These reactions are exergonic.,3
+128,SynbioEval/2,regular,TRUE,C. Uridine 5’ triphosphate,C. Uridine 5’ triphosphate,3
+129,SynbioEval/2,cot,TRUE,C. Uridine 5’ triphosphate.,C. Uridine 5’ triphosphate,3
+130,SynbioEval/3,regular,TRUE,C. 64,C. 64,3
+131,SynbioEval/3,cot,TRUE,C. 64,C. 64,3
+132,SynbioEval/4,regular,TRUE,"A. DNA polymerase starts a new chain from a 3’OH primer terminus, RNA polymerase does not."," A. DNA polymerase starts a new chain from a 3’OH primer terminus, RNA polymerase does not.",3
+133,SynbioEval/4,cot,TRUE,"A. DNA polymerase starts a new chain from a 3’OH primer terminus, RNA polymerase does not."," A. DNA polymerase starts a new chain from a 3’OH primer terminus, RNA polymerase does not.",3
+134,SynbioEval/5,regular,TRUE,B. Both parental strands will have one new strand that grows continuously and one that grows discontinuously.,B. Both parental strands will have one new strand that grows continuously and one that grows discontinuously.,3
+135,SynbioEval/5,cot,TRUE,B. Both parental strands will have one new strand that grows continuously and one that grows discontinuously.,B. Both parental strands will have one new strand that grows continuously and one that grows discontinuously.,3
+136,SynbioEval/6,regular,TRUE,C. 10%,C. 10%,3
+137,SynbioEval/6,cot,TRUE,C. 10%,C. 10%,3
+138,SynbioEval/7,regular,FALSE,C. In the promoter near the transcription start site,B. It can be hundreds or thousands of base pairs away from the core promoter sequence,3
+139,SynbioEval/7,cot,FALSE,C. In the promoter near the transcription start site,B. It can be hundreds or thousands of base pairs away from the core promoter sequence,3
+140,SynbioEval/8,regular,TRUE,D. All of the above,D. All of the above,3
+141,SynbioEval/8,cot,FALSE,You didn't provide any options above for me to choose from. Please provide the options so I can give you the correct answer.,D. All of the above,3
+142,SynbioEval/9,regular,TRUE,D. All of the above.,D. All of the above.,3
+143,SynbioEval/9,cot,FALSE,"Without a specific question or context, it's impossible to provide a correct answer. Please provide more details.",D. All of the above.,3
+144,SynbioEval/10,regular,TRUE,C. Positional cloning,C. Positional cloning,3
+145,SynbioEval/10,cot,FALSE,"Positional cloning is a method used to identify and map the location of genes associated with a particular disease or trait. This is done by studying families affected by the disease or trait and identifying the chromosomal location of the gene. Once the location is known, researchers can then isolate the gene and study its function. This method is particularly useful for identifying genes associated with complex diseases, such as cancer or heart disease, where multiple genes may be involved.",C. Positional cloning,3
+146,SynbioEval/11,regular,TRUE,D. All of the above.,D. All of the above.,3
+147,SynbioEval/11,cot,FALSE,"This appears to be a multiple choice question, but without the options provided, it's impossible to determine what ""All of the above"" refers to. Please provide the full context.",D. All of the above.,3
+148,SynbioEval/12,regular,TRUE,D. Evaluation of chromosomes taken from fetal cells in the mitotic phase of the cell cycle.,D. Evaluation of chromosomes taken from fetal cells in the mitotic phase of the cell cycle. ,3
+149,SynbioEval/12,cot,FALSE,Amniocentesis,D. Evaluation of chromosomes taken from fetal cells in the mitotic phase of the cell cycle. ,3
+150,SynbioEval/13,regular,TRUE,B. Membrane fusion,B. Membrane fusion ,3
+151,SynbioEval/13,cot,FALSE,"Membrane fusion is a process where two separate lipid bilayers merge to form a single membrane. This is a crucial process in various biological functions such as fertilization, infection by enveloped viruses, and neurotransmission. It is also involved in the transport of lipids and proteins between different cellular compartments.",B. Membrane fusion ,3
+152,SynbioEval/14,regular,TRUE,A. The nucleolus,A. The nucleolus,3
+153,SynbioEval/14,cot,TRUE,A. The nucleolus,A. The nucleolus,3
+154,SynbioEval/15,regular,TRUE,GCA,GCA,3
+155,SynbioEval/15,cot,FALSE,ACG,GCA,3
+156,SynbioEval/16,regular,TRUE,GTAACAATTCGGCA,GTAACAATTCGGCA,3
+157,SynbioEval/16,cot,FALSE,TRUE,GTAACAATTCGGCA,3
+158,SynbioEval/17,regular,FALSE,ACGGATAACGAACGGGTAAAGTCACGGATTAACGGGTAAAGTCACGGAT,CACGGATAACGAACGGGTAAAGTCACGGATAACGGGTAAAGTCACGGAT,3
+159,SynbioEval/17,cot,FALSE,ACGGATAACGAACGGGTAAAGTCACGGATAACGGGTAAAGTCACGGAT,CACGGATAACGAACGGGTAAAGTCACGGATAACGGGTAAAGTCACGGAT,3
+160,SynbioEval/18,regular,FALSE,TTATTTAACCTTCAAAGGGTTAACATGAGCCGCGGCATGTGCTTCCAGCTTGACTGTAAAGCCTTTTGCACTTTGGCCAAGGTCGGTCCTCACAAATTTGATGTTCTACGACATGATTCGGGGGCAGTGTGACCGGCTTCTCTGTTTTGTAAGTGGAGTGAAATTGGCATCTGTGAGAACCACTCCTTCGAGCATAAGAAACATAGTCACGTCACCTCTTAGCACCTCTTTAGACACAGTCATTTTTTCGAAGGACTTATCCCAGTCAATGGTCTTCTTTTTCATTACGGGTCCATCAGCGGGAAAGTTTACGCCATGAAAGATGGATTTGTGGATGAAGCAATTTCCTTCGAGTCGAATGTTCCAGCTGGCTGTAGCAACTGCTCCATCCTCAAATAGAAATGACCTTTCATATGACATTCATCCTGGGAATGCTTGCTTGAAATAGTCAGGCATGTCTGCCGGGTACTTTGTGAAGCAACGGTTTCCATATTGAAAGACTGATGACAGTATGTCAAAAGGAGAATGGAAGGGGTTTTCCCGCAGGCTTGATGATCACTAATTCGGACATCTGTTTCCCTTCGTAAGGGTACCCAGTTCCTACACCTTCGATCGTAAATTCATGGCCATTGACACTGCCTTCCATATGGTATTTCGTCCTTCATTTCTTGTACGATGCCATGCTTTGAATAAGACAT,TTATTTAACCTTCAAAGGGTTAACATGAGCCGCGGCATGTGCTTCCAGCTTGACTGTAAAGCCTTTTGCACTTTGGCCAAGGTCGGTCCTCACAATTTGATGTTCTACGACATGATTCGGGGGCAGTGTGACCGGCTTCTCTGTTTTGTAAGTGGAGTGAAATTGGCATCTGTGAGAACCACCTCCTTCGAGCATAAGAAACATAGTCACGTCACCTCTTAGCACCTCTTTAGACACAGTCATTTTTTCGAAGGACTTATCCCAGTCAATGGTCTTCTTTTTCATTACGGGTCCATCAGCGGGAAAGTTTACGCCATGAAAGATGGATTTGTGGATGAAGCAATTTCCTTCGAGTCGAATGTTCCAGCTGGCTGTAGCAACTGCTCCATCCTCAAATAGAAATGACCTTTCATATGACATTCCATCTGGGAATGCTTGCTTGAAATAGTCAGGCATGTCTGCCGGGTACTTTGTGAAGCAACGGTTTCCATATTGAAAGACTGATGACAGTATGTCAAAGGAGAATGGAAGGGGTTTTCCCGCAGGCTTGATGATCACTAATTCGGACATCTGTTTCCCTTCGTAAGGGTACCCAGTTCCTACACCTTCGATCGTAAATTCATGGCCATTGACACTGCCTTCCATATGGTATTTCGTCTTCATTTCTTGTACGATGCCATGCTTTGAATAAGACAT,3
+161,SynbioEval/18,cot,FALSE,ATGTCTTATTCAAAAGCATGGCATCGTACAAGAAATGAAGACGAAATACCATATGGAAGGCAGTGTCATGGCCATGAATTTACGATCGAAGGTGTAGGAACTGGGTACCCTTACGAAGGGAAACAGATGTCCGAATTAGTGATCATCAAGCCTGCGGGAAAAACCCCTTCCATTCCTCCTTTTGACATACTGTCATCAGTCTTTCAATATGGAAACCGTTGCTTCACAAAGTACCCGGCAGACATGCCTGACTATTTCAAGCAAGCATTCCCAGATGGAATGTCATATGAAAGGTCATTTCTATTTGAGGATGGAGCAGTTGCTACAGCCAGCTGGAACATTCGACTCGAAGGAAATTGCTTCATCCACAAATCCATCTTTCATGGCGTAAACTTTCCCGCTGATGGACCCGTAATGAAAAAAAGAAGACCATTGACTGGGATAAGTCCTTCGAAAAAATGACTGTGTCTAAAGAGGTGCTAAGAGGTGACGTGACTATGTTTCTTATGCTCGAAGGAGGTGGTGTTCTCACAGATGCCAATTTCACTCCACTTACAAAAACAGAGAAGCCGGTCACACTGCTCCCCCGAATCATGTCGTAGAACATCAAATTTGTGAGGACCGACCTTGGCCAAAGTGCAAAAAGGCTTTACAGTCAAGCTGGAAGCACATGCCGCGGCTCATGTTAACCCCTTTGAAGGTTAAATAA,TTATTTAACCTTCAAAGGGTTAACATGAGCCGCGGCATGTGCTTCCAGCTTGACTGTAAAGCCTTTTGCACTTTGGCCAAGGTCGGTCCTCACAATTTGATGTTCTACGACATGATTCGGGGGCAGTGTGACCGGCTTCTCTGTTTTGTAAGTGGAGTGAAATTGGCATCTGTGAGAACCACCTCCTTCGAGCATAAGAAACATAGTCACGTCACCTCTTAGCACCTCTTTAGACACAGTCATTTTTTCGAAGGACTTATCCCAGTCAATGGTCTTCTTTTTCATTACGGGTCCATCAGCGGGAAAGTTTACGCCATGAAAGATGGATTTGTGGATGAAGCAATTTCCTTCGAGTCGAATGTTCCAGCTGGCTGTAGCAACTGCTCCATCCTCAAATAGAAATGACCTTTCATATGACATTCCATCTGGGAATGCTTGCTTGAAATAGTCAGGCATGTCTGCCGGGTACTTTGTGAAGCAACGGTTTCCATATTGAAAGACTGATGACAGTATGTCAAAGGAGAATGGAAGGGGTTTTCCCGCAGGCTTGATGATCACTAATTCGGACATCTGTTTCCCTTCGTAAGGGTACCCAGTTCCTACACCTTCGATCGTAAATTCATGGCCATTGACACTGCCTTCCATATGGTATTTCGTCTTCATTTCTTGTACGATGCCATGCTTTGAATAAGACAT,3
+162,SynbioEval/19,regular,TRUE,MGS,MGS,3
+163,SynbioEval/19,cot,TRUE,MGS,MGS,3
+164,SynbioEval/20,regular,FALSE,MGERLKNYGD,MGRS,3
+165,SynbioEval/20,cot,FALSE,MGRSKYGI,MGRS,3
+166,SynbioEval/21,regular,FALSE,MGKIGIPNYHPKVTF,MGKFGILIIPLKVTF,3
+167,SynbioEval/21,cot,FALSE,MGKFGILNYPPKSYF,MGKFGILIIPLKVTF,3
+168,SynbioEval/22,regular,FALSE,MVGKADCVRIRGDTESHTQVPECPATQMVAPLVSST,MWARPIVTIEGIRAPPQGAECPCNQMWCH,3
+169,SynbioEval/22,cot,TRUE,MWARP IVTIR GDTST ARCRM SVQDV VP LSSH,MWARPIVTIEGIRAPPQGAECPCNQMWCH,3
+170,SynbioEval/23,regular,FALSE,"Transcription: UACCCUGGA
+Translation: YPG",MGP,3
+171,SynbioEval/23,cot,FALSE,MGT,MGP,3
+172,SynbioEval/24,regular,FALSE,"Transcription: UACCCUGGAGCAAUACUAAGGAAAACCCUGUAUU
+Translation: YPGATLEKTLY",MGPRYDSFGT,3
+173,SynbioEval/24,cot,FALSE,MGTSYDPSG,MGPRYDSFGT,3
+174,SynbioEval/25,regular,FALSE,UCACGGUAC,AGUGCCAUG,3
+175,SynbioEval/25,cot,FALSE,Ser - Arg - Tyr,AGUGCCAUG,3
+176,SynbioEval/26,regular,FALSE,UAGGCUAAACGUUAGCUUG,AUCCGAUUUGCAAUCGAAC,3
+177,SynbioEval/26,cot,FALSE,UAGGCUAAACGUUAGCUUG,AUCCGAUUUGCAAUCGAAC,3
+178,SynbioEval/27,regular,FALSE,AAGCAATGCCTAGGCAATTTGCTAATGCTTGCAA,UUCGUUACGGAUCCGUUAAACGAUUACGAACGUU,3
+179,SynbioEval/27,cot,FALSE,"This appears to be a sequence of nucleotides, which are the building blocks of DNA and RNA. Without further context or instructions, there's no specific ""answer"" to provide.",UUCGUUACGGAUCCGUUAAACGAUUACGAACGUU,3
+180,SynbioEval/28,regular,TRUE,Methane,Methane,3
+181,SynbioEval/28,cot,TRUE,"Methane is a colorless, odorless, flammable gas that is the simplest hydrocarbon. It is the primary component of natural gas and is also commonly produced by the decay of organic matter. Methane is used as a fuel and in various industrial chemical processes. It is also a potent greenhouse gas, with a global warming potential much higher than that of carbon dioxide.",Methane,3
+182,SynbioEval/29,regular,TRUE,Ethanol,Ethanol,3
+183,SynbioEval/29,cot,TRUE,"Ethanol is a type of alcohol that is often used as a solvent in the manufacture of varnishes and perfumes; as a preservative for biological specimens; in the preparation of essences and flavorings; in many medicines and drugs; as a disinfectant and in tinctures (e.g., tincture of iodine); and as a fuel and gasoline additive. It is also the type of alcohol found in alcoholic beverages.",Ethanol,3
+184,SynbioEval/30,regular,TRUE,10,10,3
+185,SynbioEval/30,cot,FALSE,11,10,3
