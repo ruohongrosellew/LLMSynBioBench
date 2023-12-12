@@ -60,6 +60,8 @@ If you want to add any new tests, you can add them in the **synbioEval.jsonl** f
 ## Benchmarking Design
 I designed 31 questions to test the models' knowledge of the SynBio domain. The questions are divided into 2 categories: Multiple choices questions and free response questions. The Multiple choices questions are designed to test the models' ability to recognize the correct answer to the question. The free response questions are in general more open-ended and designed to test the models' ability to follow the central dogma with the given DNA, RNA sequences.
 
+In most of the biology/medicine related LLM benchmarking datasets, the question are mostly in multiple choices format. Indeed, this tests the domain knowledge of LLMs. However, to make LLM as a synthetic biology lab assistant. The ability to manipulate DNA, RNA, proteins sequences are essential and cannot be tested by multiple choice questions, as this task is open-ended in nature. 
+
 For every model, I test their ability in both direct inference and using more advanced prompt engineering techniques : [Chain of Thoughts (CoT)](https://arxiv.org/abs/2205.11916)
 
 Due to API availability, I only tested the models that I have access to: GPT 3.5 Turbo, GPT 4, PaLM 2 (Bison model) and Cohere
@@ -74,7 +76,11 @@ All of the models are tested under the chat scenerio, to create a easy to use in
 | PaLM (Bison)| 0.73| 0.53 |0.125| 0.1875 | 0.42 | 0.35 | 0.26|
 | Cohere | 0.47 | 0.2 | 0.06 | 0.06 | 0.26 | 0.13| 0.13|
 
-
+Here is a list of heat maps that shows the task completion status for each given model. Red meaning the model has at least got the answer correctly once whether it's under CoT or regular testing. 
+![Heat Map on task completion in Chat GPT 3.5 Turbo](Figures/image-1.png)
+![Heat Map on task completion in Chat GPT 4](Figures/image-2.png)
+![Heat Map on task completion in PaLM](Figures/image-3.png)
+![Heat Map on task completion in Cohere](Figures/image-4.png)
 
 
 ## Limitations

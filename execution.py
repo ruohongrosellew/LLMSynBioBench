@@ -21,6 +21,9 @@ from langchain.schema import StrOutputParser
 import google.generativeai as palm
 from langchain.chat_models import ChatGooglePalm
 import pandas as pd
+global cohere_api = "YOUR COHERE API"
+global openai_api = "YOUR OPENAI API"
+global google_palm_api = "YOUR GOOGLE PALM API"
 
 
 def stream_jsonl(filename: str) -> Iterable[Dict]:
@@ -119,7 +122,10 @@ def create_cot_chain(llm):
     
 
 if __name__ == "__main__":
-    
+    openai_35_llm = ChatOpenAI(temperature=0, model= "gpt-3.5-turbo-1106", openai_api_key= openai_api_key)
+    openai_4_llm = ChatOpenAI(temperature=0, model= "gpt-4", openai_api_key= openai_api_key)
+    cohere_llm = ChatCohere(temperature=0, verbose = True, cohere_api_key= cohere_api_key)
+    palm_llm = ChatGooglePalm(temperature=0, model = "chat-bison-001", google_api_key=palm_api_key)
     palm_chain = create_cot_chain(palm_llm)
     openai_35_llm_chain = create_cot_chain(openai_35_llm)
     openai_4_llm_chain = create_cot_chain(openai_4_llm)
