@@ -128,8 +128,11 @@ dependencies:
   - pip:
     - backoff==2.2.1
     - cohere==4.37
+    - contourpy==1.2.0
+    - cycler==0.12.1
     - distro==1.8.0
     - fastavro==1.9.1
+    - fonttools==4.46.0
     - google-ai-generativelanguage==0.3.3
     - google-cloud-aiplatform==1.37.0
     - google-cloud-bigquery==3.13.0
@@ -146,8 +149,13 @@ dependencies:
     - httpcore==1.0.2
     - httpx==0.25.2
     - importlib-metadata==6.11.0
+    - kiwisolver==1.4.5
+    - matplotlib==3.8.2
     - openai==1.3.8
+    - pillow==10.1.0
     - proto-plus==1.23.0
+    - pyparsing==3.1.1
+    - seaborn==0.13.0
     - shapely==2.0.2
     - tqdm==4.66.1
 prefix: /Users/roselle/opt/anaconda3/envs/synbiobench

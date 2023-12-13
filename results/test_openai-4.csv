@@ -1,0 +1,7 @@
+,task_id,test_type,passed,result,solution,completion_id
+0,test/0,regular,False,Hello! How can I assist you today?,hello,1
+1,test/0,cot,False,"As an AI, I need your question or instructions to provide an appropriate response.",hello,1
+2,test/0,regular,False,Hello! How can I assist you today?,hello,2
+3,test/0,cot,False,"As an AI, I need your question or instructions to provide an appropriate response.",hello,2
+4,test/0,regular,False,Hello! How can I assist you today?,hello,3
+5,test/0,cot,False,"As an AI, I need your question or instructions to provide an appropriate response.",hello,3

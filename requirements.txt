@@ -16,7 +16,9 @@ charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-n
 cohere==4.37
 colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1666700638685/work
 comm @ file:///home/conda/feedstock_root/build_artifacts/comm_1691044910542/work
+contourpy==1.2.0
 cryptography @ file:///Users/runner/miniforge3/conda-bld/cryptography-split_1701563303698/work
+cycler==0.12.1
 dataclasses-json @ file:///home/conda/feedstock_root/build_artifacts/dataclasses-json_1701152323159/work
 debugpy @ file:///Users/runner/miniforge3/conda-bld/debugpy_1695534617894/work
 decorator @ file:///home/conda/feedstock_root/build_artifacts/decorator_1641555617451/work
@@ -24,6 +26,7 @@ distro==1.8.0
 exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1700579780973/work
 executing @ file:///home/conda/feedstock_root/build_artifacts/executing_1698579936712/work
 fastavro==1.9.1
+fonttools==4.46.0
 frozenlist @ file:///Users/runner/miniforge3/conda-bld/frozenlist_1695377722726/work
 google-ai-generativelanguage==0.3.3
 google-api-core @ file:///home/conda/feedstock_root/build_artifacts/google-api-core-split_1702000562495/work
@@ -54,9 +57,11 @@ jsonpatch @ file:///home/conda/feedstock_root/build_artifacts/jsonpatch_16955362
 jsonpointer @ file:///Users/runner/miniforge3/conda-bld/jsonpointer_1695397490526/work
 jupyter_client @ file:///home/conda/feedstock_root/build_artifacts/jupyter_client_1699283905679/work
 jupyter_core @ file:///Users/runner/miniforge3/conda-bld/jupyter_core_1698673707370/work
+kiwisolver==1.4.5
 langchain @ file:///home/conda/feedstock_root/build_artifacts/langchain_1700708806996/work
 langsmith @ file:///home/conda/feedstock_root/build_artifacts/langsmith_1701575514763/work
 marshmallow @ file:///home/conda/feedstock_root/build_artifacts/marshmallow_1689924608696/work
+matplotlib==3.8.2
 matplotlib-inline @ file:///home/conda/feedstock_root/build_artifacts/matplotlib-inline_1660814786464/work
 multidict @ file:///Users/runner/miniforge3/conda-bld/multidict_1696716110788/work
 mypy-extensions @ file:///home/conda/feedstock_root/build_artifacts/mypy_extensions_1675543315189/work
@@ -70,6 +75,7 @@ pandas @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_80p
 parso @ file:///home/conda/feedstock_root/build_artifacts/parso_1638334955874/work
 pexpect @ file:///home/conda/feedstock_root/build_artifacts/pexpect_1667297516076/work
 pickleshare @ file:///home/conda/feedstock_root/build_artifacts/pickleshare_1602536217715/work
+Pillow==10.1.0
 platformdirs @ file:///home/conda/feedstock_root/build_artifacts/platformdirs_1701708255999/work
 pluggy @ file:///home/conda/feedstock_root/build_artifacts/pluggy_1693086607691/work
 prompt-toolkit @ file:///home/conda/feedstock_root/build_artifacts/prompt-toolkit_1699963054032/work
@@ -85,6 +91,7 @@ pydantic @ file:///home/conda/feedstock_root/build_artifacts/pydantic_1700669197
 pydantic_core @ file:///Users/runner/miniforge3/conda-bld/pydantic-core_1700664089695/work
 Pygments @ file:///home/conda/feedstock_root/build_artifacts/pygments_1700607939962/work
 pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_1698795453264/work
+pyparsing==3.1.1
 PySocks @ file:///home/conda/feedstock_root/build_artifacts/pysocks_1661604839144/work
 pytest @ file:///home/conda/feedstock_root/build_artifacts/pytest_1698233724984/work
 pytest-subtests @ file:///home/conda/feedstock_root/build_artifacts/pytest-subtests_1684165519839/work
@@ -95,6 +102,7 @@ PyYAML @ file:///Users/runner/miniforge3/conda-bld/pyyaml_1695373482406/work
 pyzmq @ file:///Users/runner/miniforge3/conda-bld/pyzmq_1701783244552/work
 requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1684774241324/work
 rsa @ file:///home/conda/feedstock_root/build_artifacts/rsa_1658328885051/work
+seaborn==0.13.0
 setuptools==68.2.2
 shapely==2.0.2
 six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
