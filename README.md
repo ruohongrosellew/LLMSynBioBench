@@ -111,14 +111,14 @@ Roselle Wang - [ruohongrosellew](https://github.com/ruohongrosellew)
 
 
 ## Acknowledgements and Cited Work
-[Evaluating the Potential of Leading Large Language Models in Reasoning Biology Questions](https://arxiv.org/abs/2311.07582)
-[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)
-[Large Language Models are Zero-Shot Reasoners](https://arxiv.org/abs/2205.11916)
-[Evaluating Large Language Models Trained on Code](https://arxiv.org/abs/2107.03374)
-[A Survey of Large Language Models](https://arxiv.org/abs/2303.18223)
-[Bioinfo-Bench: A Simple Benchmark Framework for LLM Bioinformatics Skills Evaluation](https://www.biorxiv.org/content/10.1101/2023.10.18.563023v1.full)
-[LangChain](https://www.langchain.com/)
-[REACT: SYNERGIZING REASONING AND ACTING IN LANGUAGE MODELS](https://arxiv.org/pdf/2210.03629.pdf)
-[The Nucleotide Transformer: Building and Evaluating Robust Foundation Models for Human Genomics](https://www.biorxiv.org/content/10.1101/2023.01.11.523679v3.full)
+- [Evaluating the Potential of Leading Large Language Models in Reasoning Biology Questions](https://arxiv.org/abs/2311.07582)
+- [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)
+- [Large Language Models are Zero-Shot Reasoners](https://arxiv.org/abs/2205.11916)
+- [Evaluating Large Language Models Trained on Code](https://arxiv.org/abs/2107.03374)
+- [A Survey of Large Language Models](https://arxiv.org/abs/2303.18223)
+- [Bioinfo-Bench: A Simple Benchmark Framework for LLM Bioinformatics Skills Evaluation](https://www.biorxiv.org/content/10.1101/2023.10.18.563023v1.full)
+- [LangChain](https://www.langchain.com/)
+- [REACT: SYNERGIZING REASONING AND ACTING IN LANGUAGE MODELS](https://arxiv.org/pdf/2210.03629.pdf)
+- [The Nucleotide Transformer: Building and Evaluating Robust Foundation Models for Human Genomics](https://www.biorxiv.org/content/10.1101/2023.01.11.523679v3.full)
 
 Some of the multiple choices questions in the test suite are derived from the Bio 1A and BIOE 10 course at the University of California, Berkeley. 
