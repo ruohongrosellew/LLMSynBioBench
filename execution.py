@@ -1,30 +1,16 @@
 from typing import Optional, Callable, Dict, Iterable
-import ast
-import contextlib
-import faulthandler
-import io
-import os
-import multiprocessing
-import platform
-import signal
-import tempfile
-import gzip
+from pathlib import Path
+import sys
 import json
 import os
-from langchain.agents import AgentType, Tool, initialize_agent, load_tools
 from langchain.chat_models import ChatOpenAI, ChatCohere
-from getpass import getpass
-from langchain.chat_models import ChatVertexAI
-from langchain.prompts import ChatPromptTemplate
 from langchain.prompts import PromptTemplate
 from langchain.schema import StrOutputParser
-import google.generativeai as palm
 from langchain.chat_models import ChatGooglePalm
 import pandas as pd
-global cohere_api = "YOUR COHERE API"
-global openai_api = "YOUR OPENAI API"
-global google_palm_api = "YOUR GOOGLE PALM API"
+from models_setup import models
 
+results = {}
 
 def stream_jsonl(filename: str) -> Iterable[Dict]:
     """
@@ -43,15 +29,12 @@ def stream_jsonl(filename: str) -> Iterable[Dict]:
 
 
 def check_correctness_llm(llm, problem: Dict, trial: int, timeout: float,
-                      completion_id: Optional[int] = None) -> Dict:
+                      model_name) -> Dict:
     """
     Evaluates the functional correctness of a completion by running the test
     suite provided in the problem. 
-
-    :param completion_id: an optional completion ID so we can match
-        the results later even if execution finishes asynchronously.
     """
-    print(problem["task_id"])
+    print(f"{problem["task_id"]} with {model_name} regular")
     try: 
         result = llm.invoke(str(problem['prompt']))
     except Exception as e:
@@ -76,9 +59,9 @@ def check_correctness_llm(llm, problem: Dict, trial: int, timeout: float,
     )
 
 def check_correctness_llm_chain (chain, problem: Dict, trial: int, timeout: float,
-                      completion_id: Optional[int] = None) -> Dict:
+                      model_name) -> Dict:
     
-    print(problem["task_id"])
+    print(f"{problem["task_id"]} with {model_name} CoT")
     try:
         result = chain.invoke({'question': str(problem['prompt'])})
     except Exception as e:
@@ -91,6 +74,7 @@ def check_correctness_llm_chain (chain, problem: Dict, trial: int, timeout: floa
         solution = problem["solution"],
         completion_id=trial,
         )
+
     return dict(
         task_id=problem["task_id"],
         test_type = "cot",
@@ -100,52 +84,39 @@ def check_correctness_llm_chain (chain, problem: Dict, trial: int, timeout: floa
         completion_id= trial,
     )
 
-def create_cot_chain(llm):
-    thought_prompt = PromptTemplate.from_template(
-        """ You are a synthetic biologist, follow the instructions and answer the questions
-        {question}
-        Let's think step by step """
-    )
-
-    answer_prompt = PromptTemplate.from_template(
-        """
-    {thought}
-    Answer:"""
-    )
-    chain = (
-        {"thought": thought_prompt | llm | StrOutputParser()}
-        | answer_prompt
-        | llm
-        | StrOutputParser()
-    )
-    return chain
+def process_model(model, test_name):
+    result = []
+    if model not in results:
+        results[model] = pd.DataFrame(columns = ["task_id", "test_type", "passed", "result", "solution", "completion_id"])
     
-
-if __name__ == "__main__":
-    openai_35_llm = ChatOpenAI(temperature=0, model= "gpt-3.5-turbo-1106", openai_api_key= openai_api_key)
-    openai_4_llm = ChatOpenAI(temperature=0, model= "gpt-4", openai_api_key= openai_api_key)
-    cohere_llm = ChatCohere(temperature=0, verbose = True, cohere_api_key= cohere_api_key)
-    palm_llm = ChatGooglePalm(temperature=0, model = "chat-bison-001", google_api_key=palm_api_key)
-    palm_chain = create_cot_chain(palm_llm)
-    openai_35_llm_chain = create_cot_chain(openai_35_llm)
-    openai_4_llm_chain = create_cot_chain(openai_4_llm)
-    cohere_llm_chain = create_cot_chain(cohere_llm)
-    
-    models = {"cohere": [cohere_llm, cohere_llm_chain]}
-
-    #models = {"openai-3.5-turbo": [openai_35_llm, openai_35_llm_chain], "openai-4": [openai_4_llm, openai_4_llm_chain], "cohere": [cohere_llm, cohere_llm_chain], "palm": [palm_llm, palm_chain]}
-    results = {}
-        
-    for model in models:
-        result = []
-        if model not in results:
-            results[model] = pd.DataFrame(columns = ["task_id", "test_type", "passed", "result", "solution", "completion_id"])
+    log_filename = f"log/log_{model}_{test_name}.txt"
+    with open(log_filename, 'w') as log_file:
+        sys.stdout = log_file   
         for i in [0, 1, 2]:
-            suite = stream_jsonl('synbioEval.jsonl')
+            suite = stream_jsonl(sys.argv[1])
             for item in suite:
-                result.append(check_correctness_llm(models[model][0], problem=item, trial= i+1, timeout=10))
-                result.append(check_correctness_llm_chain(models[model][1], problem=item, trial = i+1, timeout=10))
+                result.append(check_correctness_llm(models[model][0], problem=item, trial= i+1, timeout=5000, model_name=model))
+                result.append(check_correctness_llm_chain(models[model][1], problem=item, trial = i+1, timeout=5000, model_name = model))
         for data_dict in result:
             df_temp = pd.DataFrame([data_dict])
             results[model] = pd.concat([results[model], df_temp], ignore_index=True)
-        results[model].to_csv(f"results/{model}.csv")
+        results[model].to_csv(f"results/{test_name}_{model}.csv")
+        print(f"Process for model {model} completed.")
+
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        raise Exception("Please input a jsonl file with benchmarking tests.")
+    
+    test_path = Path(sys.argv[1])
+    test_name = test_path.stem
+    with open(test_path, 'r') as file:
+        line_count = sum(1 for line in file)
+    processes = []
+    for model in models:
+        process = multiprocessing.Process(target=process_model, args=(model, test_name))
+        processes.append(process)
+        process.start()
+    for process in processes:
+        process.join(line_count * 300)
+    print("benchmarking tests completed!")

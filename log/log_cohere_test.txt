@@ -1,0 +1,7 @@
+test/0 with cohere regular
+test/0 with cohere CoT
+test/0 with cohere regular
+test/0 with cohere CoT
+test/0 with cohere regular
+test/0 with cohere CoT
+Process for model cohere completed.

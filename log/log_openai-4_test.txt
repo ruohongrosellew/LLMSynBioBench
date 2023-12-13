@@ -1,0 +1,7 @@
+test/0 with openai-4 regular
+test/0 with openai-4 CoT
+test/0 with openai-4 regular
+test/0 with openai-4 CoT
+test/0 with openai-4 regular
+test/0 with openai-4 CoT
+Process for model openai-4 completed.

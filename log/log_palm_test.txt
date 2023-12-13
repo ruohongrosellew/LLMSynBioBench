@@ -1,0 +1,7 @@
+test/0 with palm regular
+test/0 with palm CoT
+test/0 with palm regular
+test/0 with palm CoT
+test/0 with palm regular
+test/0 with palm CoT
+Process for model palm completed.
