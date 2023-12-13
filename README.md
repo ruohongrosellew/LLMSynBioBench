@@ -1,5 +1,6 @@
 # SynBioBench
-Final Project for BioE 134: Synthetic Biology Benchmarking for Large Language Models
+Final Project for BioE 134: [SynBioBench](https://github.com/ruohongrosellew/SynBioBench) - Synthetic Biology Benchmarking for Large Language Models
+*This is a repository for the SynBioBench benchmarking suite for fundational Large Language models.*
 ## Table of Contents
 - [SynBioBench](#synbiobench)
   - [Table of Contents](#table-of-contents)
@@ -37,7 +38,7 @@ conda activate synbiobench
 ```
 
 ### Set up your API keys
-After the import statements in **models_setup.py**, you will need to set up your API keys as environment variables.
+After the import statements in [models_setup.py](models_setup.py), you will need to set up your API keys as environment variables.
 
 ### Running the Benchmarking Tests
 In the virtual python environment/conda environment, run the following command:
@@ -49,18 +50,23 @@ To test if a basic benchmarking test is working, you can run the following comma
 This will run one test benchmarking test to check if your environment has been set up correctly.
 
 ### Adding Models
-This benchmarking test suite use the langchain chat models interface to call chat models and create sequential chains using the LLMs. First, check if the model is supported by Langchain, follow the instructions and pattermatch the last few lines in **models_setup.py**. If the model is not supported by Langchain, you can also add it to the models dictionary in the **models_setup.py** file. Do not call the create_cot_chain method using a llm that is not supported by Langchain.
+This benchmarking test suite use the langchain chat models interface to call chat models and create sequential chains using the LLMs. First, check if the model is supported by Langchain, follow the instructions and pattermatch the last few lines in [models_setup.py](models_setup.py). If the model is not supported by Langchain, you can also add it to the models dictionary in the [models_setup.py](models_setup.py) file. Do not call the create_cot_chain method using a llm that is not supported by Langchain.
 
 
 ### Adding Tests
-If you want to add any new tests, you can add them in the **synbioEval.jsonl** file. Each line in the file represents a test case. Each test case has the following format:
+If you want to add any new tests, you can add them in the [synbioEval.jsonl](synbioEval.jsonl) file. Each line in the file represents a test case. Each test case has the following format:
 ```
 {"task_id": "SynbioEval/0, this is the task id number",
  "prompt": "This is the question you want to ask the model", 
  "solution": "this is the standard soltuion to the question"}
 ```
+You can also create your own testing suite. Provide the directory to your test files when you run [execution.py](execution.py).
 
 ## Benchmarking Design
+**Keypoints** 
+- Different from previous benchmarking work on LLM in the biology domain, I incorporated a significant amount of open-ended questions (with one single correct solution) to evaluate the ability fundational LLMs in synthetic biology.
+- I also incorporated [CoT(Chain of Thoughts)](https://arxiv.org/abs/2205.11916) as a prompting technique to evaluate its impact on fundational LLMs' ability in the biological domain.
+
 I designed 31 questions to test the models' knowledge of the SynBio domain. The questions are divided into 2 categories: Multiple choices questions and free response questions. The Multiple choices questions are designed to test the models' ability to recognize the correct answer to the question. The free response questions are in general more open-ended and designed to test the models' ability to follow the central dogma with the given DNA, RNA sequences.
 
 In most of the biology/medicine related LLM benchmarking datasets, the question are mostly in multiple choices format. Indeed, this tests the domain knowledge of LLMs. However, to make LLM as a synthetic biology lab assistant. The ability to manipulate DNA, RNA, proteins sequences are essential and cannot be tested by multiple choice questions, as this task is open-ended in nature. 
@@ -71,7 +77,9 @@ Due to API availability, I only tested the models that I have access to: GPT 3.5
 
 All of the models are tested under the chat model, to create a easy to use interface, I used [langchain](https://www.langchain.com/) to wrap up the models and create sequencial chains to implement chain of thoughts.
 
-The benchmarking suite also support multiprocessing.
+The benchmarking suite also support multiprocessing. To speed up the evaluation process, I create seperate processes for each model so the evaluation is parallelized. The log for each process is save in the log directory.
+
+All the direct results from the models are save into csv files in the results directory.
 
 ## Results
 | Model | MC Accuracy @ Regular| MC Accuracy @ CoT | FR Accuracy @ Regular | FR Accuracy @ CoT | Regular Accuracy | CoT Accuracy | Total Accuracy |
@@ -101,13 +109,16 @@ This is a non comprehensive benchmarking test suite of the ability for large lan
 
 The test suite is also limited in the number of questions it currently has. More questions in the sysnetics biology domain will be added in the future.
 
+One of my original plan is to also test the ability of these models if we use LLM empowered Agents in the benchmarking test. Particularly, I believe adding tools to the agents and the ability to search external resource would improve the accuracy of the open ended questions by a large margin. However, I was not entirely sure if benchmarking on the fundational model should incorporate the use of external resouces, as the aim of this project is to assess the ability of the fundational model themselves. If we need to incorporate LLMs in a autonomous synthetic biology lab, we should definitely incorporate the use of agents and the [ReAcT](https://arxiv.org/pdf/2210.03629.pdf) prompting framework.
 
 ## Things to improve
 
+A more effective strategy of evaluating the multiple choice answers from the LLMs. This occurs in this work as well as some of the other LLM related projects. I did manually verified all the responses from the LLM. I'm thinking of a way to include this situation in the benchmark scoring system. For example, if the model explains why a certain option is the correct answer, it should not get the full score as it doesn't follow the direction of answer in one letter.
 
+Another direction that I could investigate is how the context window length influence the ability of the model to manipulate with long DNA/RNA/protein sequences. As I wasn't able to get access to all the OpenAI models, I couldn't test this aspect by controlling all the other confounding variables than context window length.
 
 ## Author
-Roselle Wang - [ruohongrosellew](https://github.com/ruohongrosellew)
+Roselle (Ruohong) Wang - [ruohongrosellew](https://github.com/ruohongrosellew)
 
 
 ## Acknowledgements and Cited Work
